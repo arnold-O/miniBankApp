@@ -68,20 +68,29 @@ const loanButton = document.querySelector(".loanButton");
 
 const loanAmount = document.querySelector(".loanAmount");
 
-const diplayMoney = function (movements) {
-  (myCharges.innerHTML = ""),
-    movements.forEach(function (mov, i) {
-      const type = mov > 0 ? "Deposit" : "Withdrawal";
-      const styled = mov > 0 ? "success" : "danger";
+// const buttonSort = document.querySelector(".buttonSort");
 
-      const html = `<div class="card shadow mb-1 " >
+const timerLabel = document.querySelector(".timerLabel");
+
+const diplayMoney = function (movements, sortParams = false) {
+  // (myCharges.innerHTML = ""),
+
+  // const movs = sortParams ? movements.slice().sort((a, b)=>a -b ): movements;
+
+  // console.log(movs)
+
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? "Deposit" : "Withdrawal";
+    const styled = mov > 0 ? "success" : "danger";
+
+    const html = `<div class="card shadow mb-1 " >
         <div class="card-body">
           <div class="row  justify-content-evenly ">
           <div class="col-md-6 col-sm-12 d-flex  text-center align-items-center">
     
               <div class=" fs-6 p-1 text-white  me-2  bg-${styled} rounded-pill">${
-        i + 1
-      } ${type}</div>
+      i + 1
+    } ${type}</div>
               <div class=" ">Card subtitle</div>
           </div>
           <div class=" col-md-6 col-sm-12 text-end align-items-center">
@@ -92,9 +101,9 @@ const diplayMoney = function (movements) {
     </div>
       </div>`;
 
-      //    myCharges.insertAdjacentHTML("beforeend", html)
-      myCharges.insertAdjacentHTML("afterbegin", html);
-    });
+    //    myCharges.insertAdjacentHTML("beforeend", html)
+    myCharges.insertAdjacentHTML("afterbegin", html);
+  });
 };
 
 // getting the cash in flow
@@ -181,6 +190,33 @@ const updateUI = function (curr) {
   total_balance(curr);
 };
 
+// timer functionality
+const startLogout = function () {
+  // set timer
+  let time = 100;
+
+  // call setInterval
+  const countDown = setInterval(function () {
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
+
+    // let send time to UI
+    timerLabel.textContent = `You will be logout at ${min}:${sec}`;
+
+    // logic to log out
+    if (time === 0) {
+      clearInterval(countDown);
+
+      welcomeNote.textContent = `login to get started`;
+
+      mainContainer.style.opacity = 0;
+    }
+
+    // each interval should have a decrease in time
+    time--;
+  }, 1000);
+};
+
 // functions of the form for login
 
 let currentUser;
@@ -206,6 +242,7 @@ loginButton.addEventListener("click", function (e) {
     inputUsername.value = inputPin.value = "";
 
     //  updating UI
+    startLogout();
 
     updateUI(currentUser);
   }
@@ -273,6 +310,15 @@ closeButton.addEventListener("click", function (e) {
     mainContainer.style.opacity = 0;
   }
 });
+
+// sorting button
+// let sorted = false
+// buttonSort.addEventListener('click', function(e){
+//   e.preventDefault();
+//   diplayMoney(currentUser.movements, !sorted)
+//   sorted = !sorted
+
+// })
 
 // let balance = 0
 

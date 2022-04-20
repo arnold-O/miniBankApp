@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   
-</head>
-<body>
-    <!doctype html>
+  </head>
+  <body>
+    <!DOCTYPE html>
     <html lang="en">
       <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        />
+
         <title>Hello, world!</title>
       </head>
       <body class="bg-secondary bg-opacity-25">
-        
-
-        <div class="container-fluid  ">
-            <div class="row justify-content-between m-3">
-                <div class="col-md-4 col-sm-12">
-                    <p class="h4 welcome-note">Please login to get started</p>
-                </div>
-                <div class="col-4 ">
-                    Logo
-                </div>
-                <form class="col-md-4 col-sm-12 d-flex align-items-center ">
-                  
-
-                  
-                    <div class="mb-1 me-2">
-                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                        <input type="text"  class="form-control input-username rounded-pill text-center shadow" id="exampleFormControlInput1" placeholder="User" >
-                      </div>
-                    <div class="mb-1 me-1">
-                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                        <input type="number" class="form-control input-pin rounded-pill text-center shadow" id="exampleFormControlInput1" placeholder="Pin">
-                      </div>
-                      <div class="mb-1 m-1"> 
-                          <button class="btn btn-outline rounded-pill login-button border">
-                            login
-                          </button>
-                      </div>
-                   
-                      
-                </form>
-              
+        <div class="container-fluid">
+          <div class="row justify-content-between m-3">
+            <div class="col-md-4 col-sm-12">
+              <p class="h4 welcome-note">Please login to get started</p>
             </div>
+            <div class="col-4">Logo</div>
+            <form class="col-md-4 col-sm-12 d-flex align-items-center">
+              <div class="mb-1 me-2">
+                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                <input
+                  type="text"
+                  class="form-control input-username rounded-pill text-center shadow"
+                  id="exampleFormControlInput1"
+                  placeholder="User"
+                />
+              </div>
+              <div class="mb-1 me-1">
+                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                <input
+                  type="number"
+                  class="form-control input-pin rounded-pill text-center shadow"
+                  id="exampleFormControlInput1"
+                  placeholder="Pin"
+                />
+              </div>
+              <div class="mb-1 m-1">
+                <button
+                  class="btn btn-outline rounded-pill login-button border"
+                >
+                  login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
 
-
-
-            
+        <div class="container main-cont m-auto" style="opacity: 0">
+          <div class="row justify-content-between">
+            <div class="col align-self-center text-start m-5">
+              <p class="h3">Current Balance</p>
+              <p>As of 05/03/2017</p>
+            </div>
+            <div class="col align-self-center text-end m-5">
+              <p class="h1 balance_value">$0,000</p>
+            </div>
           </div>
 
-          <div class="container main-cont m-auto " style="opacity: 0;">
-              <div class="row justify-content-between">
-                  <div class="col  align-self-center text-start m-5">
-                      <p class="h3">Current Balance</p>
-                      <p>As of 05/03/2017</p>
-                  </div>
-                  <div class="col align-self-center text-end m-5">
-                      <p class="h1 balance_value">$0,000</p>
-                  </div>
-              </div>
-
-
-              <div class="container  m-auto">
-                  <div class="row  ">
-                      <div class="col-md-7 col-sm-12  align-items-center flex-start summary">
-                          <!-- <div class="d-flex align-items-center p-2 ">
+          <div class="container m-auto">
+            <div class="row">
+              <div
+                class="col-md-7 col-sm-12 align-items-center flex-start summary"
+              >
+                <!-- <div class="d-flex align-items-center p-2 ">
                               
                                   <p class="mt-3 me-2 ">1 deposit</p>
                                   <p class="mt-3">3 days ago</p>
                               
                           </div>
                           <div></div> -->
-                          <!-- <div class="card shadow mb-3" >
+                <!-- <div class="card shadow mb-3" >
                             <div class="card-body">
                               <div class="row  justify-content-evenly ">
                               <div class="col d-flex  text-center align-items-center">
@@ -96,7 +99,7 @@
                             </div>
                         </div>
                           </div> -->
-                          <!-- <div class="card shadow mb-3" >
+                <!-- <div class="card shadow mb-3" >
                             <div class="card-body">
                               <div class="row  justify-content-evenly ">
                               <div class="col d-flex  text-center align-items-center">
@@ -111,7 +114,7 @@
                             </div>
                         </div>
                           </div> -->
-                          <!-- <div class="card shadow mb-3" >
+                <!-- <div class="card shadow mb-3" >
                             <div class="card-body">
                               <div class="row  justify-content-evenly ">
                               <div class="col d-flex  text-center">
@@ -126,126 +129,170 @@
                             </div>
                         </div>
                           </div> -->
-                        
-                      </div> 
-
-                      <div class="col-md-5 col-sm-12 mb-3 ">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-
-
-                        <div class="card bg-warning bg-opacity-50  mb-4" >
-                            <div class="card-body px-5 ">
-                              <h5 class="card-title text-start mb-3 h3">Transfer Money</h5>
-                              <form class="card-subtitle mb-2 d-flex ">
-                                <div class="mb-3 me-2 align-items-center">
-                                  <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                                  <input type="text"  class="form-control border transferInputUser shadow " id="exampleFormControlInput1" placeholder="">
-                                  <p class="text-start p-2 h5">Transfer To</p>
-                                </div>
-                                <div class="mb-3 me-2 ">
-                                  <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                                  <input type="number"  class="form-control border transferInputAmount  bg-opacity-10 shadow" id="exampleFormControlInput1" >
-                                  <p class="text-start p-2 h5">Amount</p>
-                                </div>
-                                <div>
-                                  <button class="btn btn-outline-secondary rounded-pill text-white transferButton ">Send</button>
-                                </div>
-
-                              </form>
-                            
-                            </div>
-                          </div>
-                        <div class="card bg-success bg-opacity-50 mb-4" >
-                            <div class="card-body px-5 ">
-                              <h5 class="card-title text-start mb-3 h3">Request Loan</h5>
-                              <div class="card-subtitle mb-2 d-flex ">
-                                
-                                <div class="mb-3 me-2 ">
-                                  <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                                  <input type="number"  class="form-control border loanAmount  bg-opacity-10 shadow" id="exampleFormControlInput1" >
-                                  <p class="text-start text-center  h5">Amount</p>
-                                </div>
-                                <div>
-                                  <button class="btn btn-outline-secondary rounded-pill loanButton text-white">Send</button>
-                                </div>
-
-                              </div>
-                            
-                            </div>
-                          </div>
-                        
-                       
-                          <div class="card bg-warning bg-opacity-50  mb-4" >
-                            <div class="card-body px-5 ">
-                              <h5 class="card-title text-start mb-3 h3">Close Account</h5>
-                              <form class="card-subtitle mb-2 d-flex ">
-                                <div class="mb-3 me-2 align-items-center">
-                                  <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                                  <input type="text"  class="form-control border closeAccountUser shadow " id="exampleFormControlInput1" placeholder="">
-                                  <p class="text-start p-1 h5">Confirm User</p>
-                                </div>
-                                <div class="mb-3 me-2 ">
-                                  <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-                                  <input type="number"  class="form-control border closeAccountPin  bg-opacity-10 shadow" id="exampleFormControlInput1" >
-                                  <p class="text-start p-1 h5">Confirm Pin</p>
-                                </div>
-                                <div>
-                                  <button class="btn btn-outline-secondary rounded-pill text-white closeButton ">Send</button>
-                                </div>
-
-                              </form>
-                            
-                            </div>
-                          </div>
-
-                      </div>
-                      </div>
-                      </div>
-
-                  </div>
               </div>
 
-
-
-              <div class="container-fluid bg-secondary bg-opacity-25 mb-3">
-
+              <div class="col-md-5 col-sm-12 mb-3">
                 <div class="row">
-                  <div class="col-md-7 col-sm-12">
-                    <div class="row mt-3">
-                    <div class="col-md-3 col-sm-12  d-flex align-items-center">
-                      <p class="fs-6 me-1 text-dark fw-bolder align-self-center">IN</p>
-                      <p class="h5 text-success text-opacity-75 align-self-center income-money">0000</p>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="card bg-warning bg-opacity-50 mb-4">
+                      <div class="card-body px-5">
+                        <h5 class="card-title text-start mb-3 h3">
+                          Transfer Money
+                        </h5>
+                        <form class="card-subtitle mb-2 d-flex">
+                          <div class="mb-3 me-2 align-items-center">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                            <input
+                              type="text"
+                              class="form-control border transferInputUser shadow"
+                              id="exampleFormControlInput1"
+                              placeholder=""
+                            />
+                            <p class="text-start p-2 h5">Transfer To</p>
+                          </div>
+                          <div class="mb-3 me-2">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                            <input
+                              type="number"
+                              class="form-control border transferInputAmount bg-opacity-10 shadow"
+                              id="exampleFormControlInput1"
+                            />
+                            <p class="text-start p-2 h5">Amount</p>
+                          </div>
+                          <div>
+                            <button
+                              class="btn btn-outline-secondary rounded-pill text-white transferButton"
+                            >
+                              Send
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                    <div class="col-md-3 col-sm-12  d-flex">
-                      <p class="fs-6 me-1 text-dark fw-bolder align-self-center">OUT</p>
-                      <p class="h5 text-danger text-opacity-75 align-self-center outgoing-money">0000</p>
+                    <div class="card bg-success bg-opacity-50 mb-4">
+                      <div class="card-body px-5">
+                        <h5 class="card-title text-start mb-3 h3">
+                          Request Loan
+                        </h5>
+                        <div class="card-subtitle mb-2 d-flex">
+                          <div class="mb-3 me-2">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                            <input
+                              type="number"
+                              class="form-control border loanAmount bg-opacity-10 shadow"
+                              id="exampleFormControlInput1"
+                            />
+                            <p class="text-start text-center h5">Amount</p>
+                          </div>
+                          <div>
+                            <button
+                              class="btn btn-outline-secondary rounded-pill loanButton text-white"
+                            >
+                              Send
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-3 col-sm-12 d-flex">
-                      <p class="fs-6 me-1 text-dark fw-bolder align-self-center ">INTEREST</p>
-                      <p class="h5 text-success text-opacity-75 align-self-center interest-money">0000</p>
-                    </div>
-                    <div class="col-3 d-flex">
-                      <p>+</p>
-                      <p>SORT</p>
+
+                    <div class="card bg-warning bg-opacity-50 mb-4">
+                      <div class="card-body px-5">
+                        <h5 class="card-title text-start mb-3 h3">
+                          Close Account
+                        </h5>
+                        <form class="card-subtitle mb-2 d-flex">
+                          <div class="mb-3 me-2 align-items-center">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                            <input
+                              type="text"
+                              class="form-control border closeAccountUser shadow"
+                              id="exampleFormControlInput1"
+                              placeholder=""
+                            />
+                            <p class="text-start p-1 h5">Confirm User</p>
+                          </div>
+                          <div class="mb-3 me-2">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                            <input
+                              type="number"
+                              class="form-control border closeAccountPin bg-opacity-10 shadow"
+                              id="exampleFormControlInput1"
+                            />
+                            <p class="text-start p-1 h5">Confirm Pin</p>
+                          </div>
+                          <div>
+                            <button
+                              class="btn btn-outline-secondary rounded-pill text-white closeButton"
+                            >
+                              Send
+                            </button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                  </div>
-                  <div class="col-md-5 col-sm-12"></div>
                 </div>
-
               </div>
+            </div>
+          </div>
+
+          <div class="container-fluid bg-secondary bg-opacity-25 mb-3">
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <div class="row mt-3">
+                  <div class="col-md-3 col-sm-12 d-flex align-items-center">
+                    <p class="fs-6 me-1 text-dark fw-bolder align-self-center">
+                      IN
+                    </p>
+                    <p
+                      class="h5 text-success text-opacity-75 align-self-center income-money"
+                    >
+                      0000
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-sm-12 d-flex">
+                    <p class="fs-6 me-1 text-dark fw-bolder align-self-center">
+                      OUT
+                    </p>
+                    <p
+                      class="h5 text-danger text-opacity-75 align-self-center outgoing-money"
+                    >
+                      0000
+                    </p>
+                  </div>
+                  <div class="col-md-3 col-sm-12 d-flex">
+                    <p class="fs-6 me-1 text-dark fw-bolder align-self-center">
+                      INTEREST
+                    </p>
+                    <p
+                      class="h5 text-success text-opacity-75 align-self-center interest-money"
+                    >
+                      0000
+                    </p>
+                  </div>
+                  <div class="col-3 d-flex">
+                    <!-- <button class="buttonSort">+</button>
+                      <p>SORT</p> -->
+                  </div>
+                </div>
               </div>
-                     
-       
+              <div
+                class="col-md-5 col-sm-12 align-items-center d-flex justify-content-end"
+              >
+                <p class="timerLabel align-self-center mt-2">
+                  the timer is going out
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"
+        ></script>
 
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -253,10 +300,7 @@
         -->
       </body>
     </html>
-    
 
-    <script src="backend.js">
-
-    </script>
-</body>
+    <script src="backend.js"></script>
+  </body>
 </html>
