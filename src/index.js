@@ -83,6 +83,8 @@ const diplayMoney = function (movements, sortParams = false) {
     const type = mov > 0 ? "Deposit" : "Withdrawal";
     const styled = mov > 0 ? "success" : "danger";
 
+    console.log(mov)
+
     const html = `<div class="card shadow mb-1 " >
         <div class="card-body">
           <div class="row  justify-content-evenly ">
