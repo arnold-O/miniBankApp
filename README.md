@@ -2,3 +2,7 @@
 
 
 The link :
+ https://arnold-o.github.io/miniBankApp/
+test credentials
+ username: "cb
+  pin: 6531,
